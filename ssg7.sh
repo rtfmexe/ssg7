@@ -6,9 +6,9 @@ baseurl="https://example.org"
 lang="en"
 
 # color theme
-background_color="#fff"
-text_color="#3e4349"
-link_color="#004b6b"
+background_color="#f6f7fc"
+text_color="#343636"
+link_color="#006edc"
 
 render_template(){
 local title=$1
@@ -21,10 +21,9 @@ local html="<!DOCTYPE html>
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
 <title>$title</title>
 <style>
-body {max-width:650px;margin:20px auto;background-color:$background_color;color:$text_color;font-size:1.125em;}
+body {max-width:650px;margin:20px auto;background-color:$background_color;color:$text_color;font-size:1.125em;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;}
 a {color:$link_color;text-decoration:none;}
 p, ul li, ol li {margin-bottom: 1em; line-height: 1.5em;}
-small {text-align: center;}
 date {font-size: 0.9em;}
 </style>
 </head>
@@ -57,7 +56,7 @@ printf "$index_content"
 }
 
 usage() {
-  printf "usage: $0 SOURCE DEST\n"
+  printf "usage: $0 SRC_DIR DST_DIR\n"
   exit 1
 }
 
