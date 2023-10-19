@@ -27,6 +27,7 @@ Edit ssg7.sh
     background_color="#f6f7fc"
     text_color="#343636"
     link_color="#006edc"
+    quote_color="#f6d6d9"
 
 ## try it
 
