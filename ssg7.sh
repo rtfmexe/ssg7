@@ -9,6 +9,7 @@ lang="en"
 background_color="#f6f7fc"
 text_color="#343636"
 link_color="#006edc"
+quote_color="#f6d6d9"
 
 render_template(){
 local title=$1
@@ -21,10 +22,11 @@ local html="<!DOCTYPE html>
 <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
 <title>$title</title>
 <style>
-body {max-width:650px;margin:20px auto;background-color:$background_color;color:$text_color;font-size:1.125em;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;}
+body {max-width:650px;margin:0 auto;padding:1em;background-color:$background_color;color:$text_color;font-size:1.125em;font-family:Helvetica,Arial,sans-serif;}
 a {color:$link_color;text-decoration:none;}
 p, ul li, ol li {margin-bottom: 1em; line-height: 1.5em;}
 date {font-size: 0.9em;}
+blockquote {border-left:5px solid $quote_color;margin:0;padding-left:1em;}
 </style>
 </head>
 <body>
